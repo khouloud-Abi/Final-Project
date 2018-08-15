@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Echange-TN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel='stylesheet' id='prettyphoto-css'  href="prettyPhoto.css" type='text/css' media='all'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style=" background : url('1.gif') no-repeat;">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="../index.html">Echange.TN</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="rech.html">Accueil</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Listes des Echanges<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="loisir.html">Loisires</a></li>
+                    <li><a href="maison.html">Maison</a></li>
+                    <li><a href="prof.html">Equipements</a></li>
+                </ul>
+            </li>
+            <li><a href="disposer.html">Déposer une Annonce</a></li>
+          </ul>
+        </div>
+</nav>  
+
+      <div class="container-fluid" style=" color:white; display: flex;">
+                <form style="width: 48%; border-width: 3px">
+                <p style="text-align: center"><strong>CE QUE J'AI</strong> </p>
+                <label for="inputState">Categories</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Maison</option>
+                  <option>Matériels Professionel</option>
+                  <option>Loisirs</option>
+                </select>
+                <label for="inputState">sous Categories</label>
+                <select id="inputState" class="form-control">
+                  <option selected>equipements industriels</option>
+                  <option>materiels agricoles</option>
+                  <option>equipements industriels</option>
+                  <option>Montres/bijoux</option>
+                  <option>Ameublement</option>
+                  <option>vetements</option>
+                  <option>Hobbies/collections</option>
+                  <option>livres</option>
+                  <option> instruments de musiques</option>
+
+
+                </select>
+                <label for="name" >titre d'objet</label><br>
+                <input class="form-control" id="name" type="text"><br>
+							<label rows="4" cols="50" >detail:</label><br>
+              <textarea class="form-control" rows="4" cols="50"> </textarea>
+              <div class="form-group">
+                  <label for="exampleFormControlFile1">ajouter image</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+								<button class="btn btn-lg btn-success"> Valider</button>
+            </form>
+                <form style="width: 48%;">
+                 <p style="text-align: center"><strong>CE QUE JE VEUX</strong></p>
+                 <label for="inputState">Categories</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Maison</option>
+                  <option>Matériels Professionel</option>
+                  <option>Loisirs</option>
+                </select>
+                <label for="inputState">sous Categories</label>
+                <select id="inputState" class="form-control">
+                  <option selected>equipements industriels</option>
+                  <option>materiels agricoles</option>
+                  <option>equipements industriels</option>
+                  <option>Montres/bijoux</option>
+                  <option>Ameublement</option>
+                  <option>vetements</option>
+                  <option>Hobbies/collections</option>
+                  <option>livres</option>
+                  <option> instruments de musiques</option>
+                </select>
+                <label for="name" >titre d'objet</label><br>
+                <input class="form-control" id="name" type="text"><br>
+							<label rows="4" cols="50" >detail:</label><br>
+              <textarea class="form-control" rows="4" cols="50"> </textarea>
+              <label for="inputState">Zone d'echange</label>
+                <select id="inputState" class="form-control">
+                  <option selected>tunis</option>
+                  <option>sousse</option>
+                  <option>Gafsa</option>
+                  <option>Monastir</option>
+
+                </select>
+               <br>
+            
+                  <button class="btn btn-lg btn-success"> Valider</button>
+      </form>
+           
+</div>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script  src="js/index.js"></script>
+
+</body>
+
+</html>

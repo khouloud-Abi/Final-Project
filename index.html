@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> ECHANGE.TN</title>
+
+
+
+    <!-- ALL CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="css/settings.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/preset.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- login -->
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
+</head>
+
+<body>
+
+    <!--PRELOADER START-->
+    <div class="preloader">
+        <div class="loader">
+            <img src="images/loader2.gif" alt="">
+        </div>
+    </div>
+    <!--PRELOADER END-->
+
+    <!--HEADER 01 START-->
+    <header class="header isSticky" id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2 noPaddingLeft">
+                    <div class="logo">
+                        <a href="index.html" style="color: antiquewhite">Echange.TN</a>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-10">
+                    <nav class="mainMenu">
+                        <ul>
+                            <li class="scroll has-menu-items active">
+                                <a href="#slider">Espace Echange</a>
+                                <ul class="sub-menu" style="background-color: white">
+                                    <li>
+                                        <a onclick="document.getElementById('id01').style.display='block'">Se Connecter</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="document.getElementById('id02').style.display='block'">S'inscrire</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="scroll">
+                                <a href="">A propos</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#about">Qui sommes Nous?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#about2">Notre Concept</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="scroll">
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--HEADER 01 END-->
+
+    <!--Login PopUp-->
+    <div id="id01" class="modal">
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/image.jpg">
+            </div>
+
+            <div class="container">
+                <label>
+                    <b>Pseudo</b>
+                </label>
+                <br>
+                <input type="email" placeholder="Entrer votre Email." required>
+                <br>
+                <label>
+                    <b>Password</b>
+                </label>
+                <br>
+                <input type="password" placeholder="Entrer votre mot de passe" required>
+                <br>
+                <button type="submit" class="btn btn-primary btn-lg">
+                    <a href="membre/rech.html">Se Connecter</a>
+                </button>
+            </div>
+        </form>
+    </div>
+    <!--Login PopUp End-->
+
+    <!--SignIn PopUp-->
+    <div id="id02" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/avatar.jpg">
+            </div>
+
+            <div class="container">
+                <label>
+                    <b>Pseudo</b>
+                </label>
+                <br>
+                <input type="email" placeholder="Entrer votre Email.." required>
+                <br>
+                <label>
+                    <b>Numéro</b>
+                </label>
+                <br>
+                <input type="tel" placeholder="Entrer votre numéro.." required>
+                <br>
+                <label>
+                    <b>Adresse</b>
+                </label>
+                <br>
+                <input type="text" placeholder="Entrer votre adresse.." required>
+                <br>
+                <label>
+                    <b>Password</b>
+                </label>
+                <br>
+                <input type="password" placeholder="Entrer votre mot de passe" required>
+                <br>
+                <button type="submit" class="btn btn-primary btn-lg ">S'inscrire</button>
+            </div>
+        </form>
+    </div>
+    <!--SignIn PopUp End-->
+
+    <!--SLIDER START-->
+    <section class="slider" id="slider">
+        <div class="tp-banner">
+            <ul>
+                <li data-transition="cube" data-slotamount="7" data-masterspeed="1000">
+                    <img src="images/slider/s1.jpg" alt="">
+                    <div class="tp-caption sfb" data-x="center" data-y="center" data-hoffset="0" data-voffset="-40" data-speed="1600" data-start="1000"
+                        data-easing="easeInOutCubic">
+                        <div class="revCon">
+                            <h5 class="text-uppercase color_white"> Nous ne faisons rien de moins que parfait</h5>
+                        </div>
+                    </div>
+                    <div class="tp-caption sfb" data-x="center" data-y="center" data-hoffset="0" data-voffset="35" data-speed="2000" data-start="1500"
+                        data-easing="Power4.easeOut">
+                        <div class="revCon">
+                            <h2 class="lead color_white">L'aventure commence ici</h2>
+                        </div>
+                    </div>
+
+                </li>
+                <li data-transition="cube" data-slotamount="7" data-masterspeed="1000">
+                    <img src="images/slider/s2.jpg" alt="">
+                    <div class="tp-caption sfb" data-x="center" data-y="center" data-hoffset="0" data-voffset="-40" data-speed="1600" data-start="1000"
+                        data-easing="easeInOutCubic">
+                        <div class="revCon">
+                            <h5 class="text-uppercase color_white">Toute chose a une valeur</h5>
+                        </div>
+                    </div>
+                    <div class="tp-caption sfb" data-x="center" data-y="center" data-hoffset="0" data-voffset="35" data-speed="2000" data-start="1500"
+                        data-easing="Power4.easeOut">
+                        <div class="revCon">
+                            <h2 class="lead color_white">Echanger cette valeur </h2>
+                        </div>
+                    </div>
+
+                </li>
+                <li data-transition="cube" data-slotamount="7" data-masterspeed="1000">
+                    <img src="images/slider/s3.jpg" alt="">
+                    <div class="tp-caption sfb" data-x="center" data-y="center" data-hoffset="0" data-voffset="-40" data-speed="1600" data-start="1000"
+                        data-easing="easeInOutCubic">
+                        <div class="revCon">
+                            <h5 class="text-uppercase color_white">Garder l'esprit de partage</h5>
+                        </div>
+                    </div>
+                    <div class="tp-caption sfb" data-x="center" data-y="center" data-hoffset="0" data-voffset="35" data-speed="2000" data-start="1500"
+                        data-easing="Power4.easeOut">
+                        <div class="revCon">
+                            <h2 class="lead color_white">Vivre une nouvelle experience</h2>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="mouseSlider">
+            <a href="#about" class="normal">
+                <img src="images/mouse.png" alt="">
+            </a>
+            <a href="#about" class="hover">
+                <img src="images/mouseh.png" alt="">
+            </a>
+        </div>
+    </section>
+    <!--SLIDER END-->
+
+    <!--ABOUT START-->
+    <section class="about" id="about">
+        <div class="aboutTop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="abcontentT">
+                            <h2 class="lead abBigtitle magenta bold">Vive Le Don !</h2>
+                            <h4 class="text-uppercase magenta bolder">Decouvrir Echange.TN</h4>
+                            <h3 class="lead light color_white">
+                                Faites de bonnes affaires avec notre site de consommation collaborative, 1er service de don d'objets entre personnes.
+
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about2">
+            <div class="abBigtitle">
+                <h1 class="lead">Ne jetez plus, Donnez!</h1>
+            </div>
+            <div class="aboutBottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="abcontentB">
+
+                                <h5 class="lead bold color_white">Aujourd'hui,on achète moins: On loue,on s'échange</h5>
+                                <h2 class="light color_white">
+                                    Le troc, l'échange, le partage, l'emprunt, la location… Ces nouvelles pratiques de «Consommation Collaborative» ont le vent
+                                    en poupe. Aujourd'hui, on préfère utiliser plutôt que posséder. Cette tendance prend
+                                    de plus en plus d'ampleur. En réadaptant le troc au monde d’aujourd’hui, nous souhaitons
+                                    réduire la surconsommation et développer la solidarité et le partage. </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ourServices">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="singleService">
+                            <div class="serImg">
+                                <img src="images/services/1.png" alt="">
+                            </div>
+                            <h6 class="lead text-uppercase bold">PROFESSIONELS</h6>
+                            <p>Echanger tous vos materiéls agricoles,equipements industriels...</p>
+                            <a href="#">lire suite</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="singleService">
+                            <div class="serImg">
+                                <img src="images/services/2.png" alt="">
+                            </div>
+                            <h6 class="lead text-uppercase bold">LOISIRS</h6>
+                            <p>Echanger instruments musicales, livres et des jeux gratuit</p>
+                            <a href="#">lire suite</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="singleService">
+                            <div class="serImg">
+                                <img src="images/services/3.png" alt="">
+                            </div>
+                            <h6 class="lead text-uppercase bold">MAISON</h6>
+                            <p>Echanger sans aucun argents tous vos meubles et troc de maison</p>
+                            <a href="#">lire suite</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ABOUT END-->
+    <!--CONTACT START-->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="contactInner">
+                        <h3 class="magenta light">
+                            Avoir une question? ou juste dire bonjour!</h3>
+                        <div class="contactForm">
+                            <form action="#" method="post" id="contactForm">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="single_form">
+                                            <label>Téléphone:</label>
+                                            <input type="text" name="con_phone" id="con_phone" class="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="single_form">
+                                            <label>Email:</label>
+                                            <input type="email" name="con_email" id="con_email" class="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="single_form">
+                                            <label>Message:</label>
+                                            <textarea id="con_msg" name="con_msg" class="required"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 text-center">
+                                        <input type="submit" value="Envoyer" id="con_submit" class="bes_button">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CONTACT END-->
+
+    <!--COPY RIGHT START-->
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="copyPera">&COPY; 2018 K+S. All Rights Reserved.1000 coders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--COPY RIGHT END-->
+
+    <a id="backToTop" href="#">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <!-- ALL JS -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="js/theme.js"></script>
+
+
+
+</body>
+
+</html>

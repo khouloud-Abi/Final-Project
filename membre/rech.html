@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Echange-TN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/client.css">
+</head>
+
+<body>
+            <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="../index.html">Echange.TN</a>
+                      </div>
+                      <ul class="nav navbar-nav">
+                        <li><a href="rech.html">Accueil</a></li>
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Listes des Echanges<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="loisir.html">Loisires</a></li>
+                                <li><a href="maison.html">Maison</a></li>
+                                <li><a href="prof.html">Equipements</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="disposer.html">Déposer une Annonce</a></li>
+                      </ul>
+                    </div>
+            </nav>
+            <div>
+            <img src="../images/1.jpg" style="width: 100%; height:auto; background-size: 100% 100%;">  
+            </div>
+            <form class="form-inline" action="/action_page.php">
+            <label>  Annonces à Prowimité:</label>
+                <select placeholder="Catégories" class="form-control" >
+                        <option value="" selected disabled hidden>Choisir Catégories</option>
+                        <option>Maison</option>
+                        <option>Matériels Professionels</option>
+                        <option>Loisirs</option>
+                </select>
+            <input type="text" placeholder="Produit à chercher">
+            <input type="text" placeholder="Ville..">
+            <input type="button" style="background: url(images/1.jpg); background-size: 100% 100%; width: 70px;" onclick="document.getElementById('id01').style.display='block'">
+            <button type="submit" class="button">Chercher</button>
+            </form>
+
+           <div id='id01' class="modal" style="display: none; 
+           position: fixed; 
+           width: 100%; 
+           height: 100%; 
+           overflow: auto; 
+           padding-top: 60px;">
+            <div id="map" style="height: 200px; width: 450px;"></div></div>
+</body>
+
+<script>
+        function myMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(51.5, -0.12),
+            zoom: 7,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+      </script>
+      
+      <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+      <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</html>
